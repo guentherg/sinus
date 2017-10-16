@@ -26,6 +26,24 @@ function draw() {
   	text("b = "+String(b), 50, 70);
   	text("x", width-20, height/2+20);
   	text("y", width/2+20, 20);
+
+  	for(var i = 0; i <= 400; i+=100){
+  		line(width/2-10, height/2-i, width/2+10, height/2-i);
+  		text(String(i/100), width/2+20, height/2-i);
+  	}
+
+  	for(var i = 0; i <= 400; i+=100){
+  		line(width/2-10, height/2+i, width/2+10, height/2+i);
+  		text(String(-1*(i/100)), width/2+20, height/2+i);
+  	}
+  	
+  	for(var i = -3; i <= 3; i++){
+  		line(width/2+(i*PI*100), height/2-10, width/2+(i*PI*100), height/2+10);
+		if(i != 0){
+  			text(String(i)+"π", width/2+(i*PI*100), height/2+30);
+  		}
+  	}
+
 	noFill();
 
 	a = as.value();
@@ -36,7 +54,7 @@ function draw() {
 	beginShape();
 	for(var i = -width/2; i < width/2; i++){
 		var x = i;
-		var y = (a*100)*sin(b*(x/100));
+		var y = -(a*100)*sin(b*(x/100));
 		vertex(x, y);
 	}
 	endShape(LINES);

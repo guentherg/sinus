@@ -10,7 +10,7 @@ function setup() {
 	stroke(0);
 	strokeWeight(1);
   	as = createSlider(0, 4, 1, 0.5);
-  	bs = createSlider(0, 4, 1, 0.1);
+  	bs = createSlider(0, 13, 1, 0.1);
   	as.position(300, 35);
   	bs.position(300, 55);
 }

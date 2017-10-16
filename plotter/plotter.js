@@ -1,7 +1,7 @@
 var as;
 var bs;
-var a = 2;
-var b = 1/3;
+var a;
+var b;
 
 function setup() {
 	createCanvas(innerWidth, innerHeight);

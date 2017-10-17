@@ -2,6 +2,7 @@ var as;
 var bs;
 var a;
 var b;
+var c = PI;
 
 function setup() {
 	createCanvas(innerWidth, innerHeight);
@@ -54,7 +55,7 @@ function draw() {
 	beginShape();
 	for(var i = -width/2; i < width/2; i++){
 		var x = i;
-		var y = -(a*100)*sin(b*(x/100));
+		var y = -(a*100)*sin(b*(x/100) + c);
 		vertex(x, y);
 	}
 	endShape(LINES);

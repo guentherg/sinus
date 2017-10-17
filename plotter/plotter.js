@@ -2,7 +2,7 @@ var as;
 var bs;
 var a;
 var b;
-var c = PI;
+var c;
 
 function setup() {
 	createCanvas(innerWidth, innerHeight);
@@ -12,8 +12,10 @@ function setup() {
 	strokeWeight(1);
   	as = createSlider(0, 4, 1, 0.5);
   	bs = createSlider(0, 13, 1, 0.1);
+  	cs = createSlider(0, 4, 1, 0.1);
   	as.position(300, 35);
   	bs.position(300, 55);
+	cs.position(300, 75);
 }
 
 function draw() {
@@ -49,6 +51,7 @@ function draw() {
 
 	a = as.value();
 	b = bs.value();
+	c = cs.value();
 
 	push();
 	translate(width/2, height/2);
